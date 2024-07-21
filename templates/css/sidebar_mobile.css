@@ -1,0 +1,29 @@
+/* Styles for the <a> tags */
+.sidebar-dropdown .dropdown-toggle,
+.sidebar-dropdown .sidebar-submenu ul li a {
+  color: #333; /* Màu chữ */
+  text-decoration: none; /* Bỏ gạch chân */
+  font-size: 14px; /* Cỡ chữ */
+  font-family: Arial, sans-serif; /* Font chữ */
+  transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu chữ */
+}
+
+.sidebar-dropdown .dropdown-toggle:hover,
+.sidebar-dropdown .sidebar-submenu ul li a:hover {
+  color: red /* Màu chữ khi hover */
+}
+.sidebar-dropdown .dropdown-toggle {
+   display: block;
+   padding: 10px 20px;
+   color: #333;
+   text-decoration: none;
+   font-weight: bold;
+ }
+
+ .sidebar-dropdown .dropdown-toggle:hover {
+   background-color: #f0f0f0;
+ }
+ .sidebar-dropdown .dropdown-toggle::after {
+   float: right;
+   margin-top: 7px;
+ }

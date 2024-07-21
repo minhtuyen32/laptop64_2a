@@ -1,0 +1,925 @@
+/* CSS project */
+
+/* LOGIN */
+:root{
+  --main-bg:#white;
+}
+
+.main-bg {
+  background: var(--main-bg) !important;
+}
+.btn-login:hover {
+ background-color: #ff6666  !important; /* Màu nền mới khi hover */
+}
+.btn-login-gg:hover {
+ background-color: #66a3ff  !important; /* Màu nền mới khi hover */
+}
+.btn-login-fb:hover {
+ background-color: #6699cc  !important; /* Màu nền mới khi hover */
+}
+.lbl {
+ color: black;
+ text-decoration: none; /* Loại bỏ gạch chân */
+ font-weight: 600;
+}
+.lbl:hover {
+ color: blue;
+}
+
+/* Thiết lập cho phần footer */
+body{
+   display: flex;
+   flex-direction: column;
+   min-height: 107vh; /* Chiều cao tối thiểu của body bằng chiều cao của viewport */
+   margin: 0;
+}
+
+footer p {
+ margin: 0; /* Xóa khoảng margin mặc định của thẻ p */
+}
+footer {
+   background-color: #e5e6ed;
+   text-align: center;
+   padding: 20px 0;
+   margin-top: auto; /* Đẩy footer xuống dưới cùng của trang */
+}
+/* LOGIN */
+
+/*Dashboard*/
+a {
+ font-size:14px;
+ font-weight:700
+}
+.superNav {
+ font-size:13px;
+}
+
+@media screen and (max-width:540px){
+ .centerOnMobile {
+   text-align:center
+ }
+}
+/* Định nghĩa lại màu viền mặc định và viền khi focus của input */
+.input-group .form-control {
+ border-color: #ced4da; /* Màu viền mặc định */
+ /* margin-top: 10px; */
+}
+
+.input-group .form-control:focus {
+ border-color: white; /* Màu viền khi focus */
+ box-shadow: none; /* Bỏ đổ bóng khi focus */
+}
+
+
+/* footer */
+.policy{
+ text-decoration: none !important;
+ font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+.menu-link{
+ text-decoration: none;
+ font-weight: 500;
+}
+.menu-header{
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+#myCarousel {
+  max-width: 1000px; /* Thay đổi giá trị này để điều chỉnh kích thước của carousel */
+}
+
+.banner-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* Điều chỉnh kích thước hình ảnh trong carousel */
+#myCarousel .carousel-item img {
+  max-width: 100%;
+}
+/* CSS cho slider product */
+.slogan{
+ font-size: small;
+ text-align: center;
+ color:white;
+ background: linear-gradient(135deg, #FFA500, #FF0000, #FFFF00);
+ padding: 2px;
+ display: inline-block; /* Đảm bảo lớp .slogan có kích thước phù hợp với nền gradient */
+ width: 100%; /* Đảm bảo rộng của .slogan là 100% để nền gradient hiển thị rõ ràng */
+border-radius: 20px;
+}
+.card-price-sale{
+ background-color: red;
+ color: white;
+ width: auto;
+ padding: 2px 5px;
+ border-radius: 10px;
+}
+.card-price-del{
+ text-align: left;
+}
+.card-price{
+ color: #ff0000;
+ font-size: larger;
+ font-weight: 600;
+}
+.slide-container{
+background-color: #2fa8ef; /*màu của background slider */
+ max-width: 1300px;
+ width: 100%;
+ padding: 20px 0;
+ border-radius: 0 0 15px 15px; /* Bo tròn cho 2 cạnh trên, 0 cho 2 cạnh dưới */
+
+}
+
+.slide-content{
+ margin: 0 40px;
+ overflow: hidden;
+}
+.card{
+ border-radius: 25px;
+ background-color: #FFF;
+ cursor: pointer;
+}
+
+.image-content,
+.card-content{
+ display: flex;
+ flex-direction: column;
+ padding: 10px 14px;
+}
+.image-content{
+ position: relative;
+}
+
+.card-image {
+ position: relative;
+ height: auto;
+ width: auto;
+ object-fit: cover;
+ min-height: 100px; /* Đặt chiều cao tối thiểu ngay cả khi hình không hiển thị */
+ 
+
+}
+ 
+
+
+.button-cart{
+ color: blue;
+ border: none;
+   padding: 3px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   font-size: larger;
+   margin: 0 auto; /* Để căn giữa button trong container cha */
+}
+/*prev and next start */
+.swiper-button-next{
+  color: white;
+ right: 0;
+ pointer-events: auto; /* Cho phép các sự kiện chuột từ phần tử này */
+}
+.swiper-button-prev{
+ left: 0;
+ color: white;
+}
+.swiper-pagination-bullet{
+ background-color: white;
+ opacity: 1;
+}
+.swiper-pagination-bullet-active{
+ background-color: white;
+}
+
+@media (max-width: 767.98px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important; /* Ẩn các nút điều hướng khi ở giao diện mobile */
+  }
+}
+/*prev and next end */
+
+
+@media screen and (max-width: 768px) {
+ .slide-content{
+   margin: 0 10px;
+ }
+ .swiper-navBtn{
+   display: none;
+ }
+}
+.add-to-cart {
+ float: inline-end;
+ position: relative; 
+ display: inline-block; 
+}
+.card-title{
+ min-height: 3.5em; /* Đặt chiều cao tối thiểu là 2.5em (tương đương khoảng 2 dòng văn bản) */
+ overflow: hidden;
+ height: 55px;
+ font-weight: 500;
+ 
+}
+.card-title:hover{
+  color: #FF0000;
+}
+.add-to-cart:hover .cart-text {
+ opacity: 1; /* Hiển thị khi hover */
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container h4 {
+  font-size: 24px; /* Font size mặc định */
+}
+
+.header-container p {
+  font-size: 18px; /* Font size mặc định */
+}
+
+/* Điều chỉnh font size cho màn hình mobile (< 768px) */
+@media (max-width: 767px) {
+  .header-container {
+    flex-direction: column; /* Chuyển sang layout dọc */
+    align-items: flex-start; /* Căn trái theo chiều ngang */
+  }
+
+  .header-container h4 {
+    font-size: 17px; /* Font size nhỏ hơn cho mobile */
+    margin-bottom: 10px; /* Khoảng cách giữa h4 và p */
+  }
+
+  
+
+  /* Điều chỉnh font cho phần chương trình đang diễn ra */
+  #countdown-text {
+    font-size: 14px; /* Font size nhỏ hơn cho mobile */
+  }
+}
+
+/* CSS cho slider product end */
+
+.sample-slider {
+      width: 100%;
+    }
+
+    .sample-slider img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+
+    /* Styles for when the slider is disabled */
+    .sample-slider.-non-slider .swiper-wrapper {
+      transform: inherit !important;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Display 6 images per row */
+      gap: 10px;
+    }
+
+    @media (max-width: 960px) {
+      .sample-slider.-non-slider .swiper-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Display 2 images per row for smaller screens */
+      }
+    }
+
+    .sample-slider.-non-slider .swiper-slide {
+      width: inherit !important;
+    }
+
+    .sample-slider.-non-slider .swiper-slide-duplicate {
+      display: none;
+    }
+    header {
+      background-color: #03370f;
+      height: 40px;
+      position: relative; /* Để phần tử con có thể được định vị tuyệt đối bên trong header */   
+    }    
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+      font-size: 20px;
+    }
+    .close-btn:hover {
+      color: red;
+    }
+    .close-btn i {
+      margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+      
+    }
+  
+    /* Media queries cho giao diện mobile */
+    @media (max-width: 768px) {
+      header {
+        display: none; /* Ẩn header khi màn hình nhỏ hơn hoặc bằng 768px */
+      }
+    }
+
+    
+.sample-slider {
+  width: 100%;
+}
+
+.sample-slider img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.zalo-icon {
+  position: fixed;
+  bottom: 20px; /* Khoảng cách từ biểu tượng Zalo đến đáy màn hình */
+  right: 20px; /* Khoảng cách từ biểu tượng Zalo đến cạnh phải của màn hình */
+  z-index: 997; /* Để đảm bảo biểu tượng Zalo hiển thị trên các phần tử khác */
+}
+.zalo-icon img {
+  width: 50px; /* Độ rộng của biểu tượng Zalo */
+  height: auto; /* Đảm bảo tỷ lệ khung hình tự động */
+  cursor: pointer; /* Đổi con trỏ chuột khi di chuột qua biểu tượng */
+
+}
+
+
+.chat-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: blue;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: darkblue;
+}
+.chat-btn .close {
+  display: none
+}
+.chat-btn i {
+  transition: all 0.9s ease
+}
+
+#check:checked~.chat-btn i {
+  display: block;
+  pointer-events: auto;
+  transform: rotate(180deg)
+}
+
+#check:checked~.chat-btn .comment {
+  display: none
+}
+.wrapper {
+  position: fixed;
+  bottom: 90px;
+  right: 5px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none; /* Ngăn không cho phần tử này nhận các sự kiện chuột */
+
+}
+.wrapper.active {
+  pointer-events: auto; /* Cho phép các sự kiện chuột khi có lớp active */
+}
+
+#check:checked ~ .wrapper {
+  opacity: 1;
+}
+
+.header {
+  padding: 13px;
+  background-color: blue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.chat-form {
+  padding: 15px;
+}
+
+.chat-form input,
+.chat-form textarea,
+.chat-form button {
+  margin-bottom: 10px;
+}
+
+.chat-form textarea {
+  resize: none;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+  background-color: blue;
+  border: none;
+  color: #fff;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 991px){
+  .sidebar{
+     background-color: white;
+     /* backdrop-filter: blur(10px); */
+  }
+  .offcanvas {
+     width: 85% !important; /* Adjust this value as needed */
+   }
+  .offcanvas-header{
+     background-color: #e30019;
+     height: 50px;
+  }
+  .navbar-nav .nav-link,
+.navbar-nav .dropdown-item {
+   color: black !important;
+}
+.bg-nav{
+  background-color: #e30019;
+}
+}
+
+.bg-nav{
+  background-color: #e30019;
+}
+
+
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+ }
+ @media (min-width: 1400px) {
+  /* Đặt các quy tắc CSS cho các thiết bị có chiều rộng lớn hơn 1400px ở đây */
+  .form-control {
+    /* Kích thước chung của input */
+    width: 340px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-control {
+    /* Kích thước chung của input */
+    width: 140px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .form-control {
+    /* Kích thước chung của input */
+    width: 140px !important;
+  }
+  
+}
+
+
+@media (max-width: 991px) {
+  .custom-search {
+    width: 200px; /* Điều chỉnh độ rộng tùy ý cho màn hình nhỏ hơn */
+  }
+
+}
+
+.btn-search {
+  min-width: 30px;
+  height: 40px;
+  padding: .375rem .75rem; /* Điều chỉnh padding tùy theo form-control */
+  color: white; /* Màu icon */
+  background-color: #246cd4; /* Màu nền */
+  border: none; /* Viền */
+  border-radius: .25rem; /* Độ cong viền */
+}
+.btn-search:hover {
+  background-color: #198754; /* Màu nền hover */
+}
+.btn-search i {
+  font-size: 1.2rem; /* Kích thước của biểu tượng */
+}
+/* Default font size for nav links */
+.navbar-nav .nav-link-item {
+  font-size: 13px; /* Adjust default font size as needed */
+  padding: 8px 30px;
+  text-decoration: none;
+}
+.nav-link-item:hover {
+  color: red !important; /* Màu chữ khi hover */
+}
+/* Media query for smaller screens */
+@media (max-width: 1400px) {
+  .navbar-nav .nav-link-item {
+    font-size: 12px; /* Reduce font size for smaller screens */
+    padding: 8px 20px;
+
+  }
+}
+@media (max-width: 1200px) {
+  .navbar-nav .nav-link-item {
+    font-size: 10px; /* Reduce font size for smaller screens */
+    padding: 8px 15px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link-item {
+    font-size: 7px; /* Further reduce font size for even smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link-item {
+    font-size: 12px; /* Adjust font size for very small screens */
+  }
+}
+
+/* Default style for img */
+#myCarousel .carousel-item img {
+  width: 100%;
+  height: 330px;
+}
+
+
+
+
+
+/* Cho màn hình nhỏ hơn 1024px */
+@media (max-width: 1023px) {
+  .banner-column .row {
+    margin-top: 15px !important;
+    margin-bottom: -3px !important;
+  }
+  .banner-column {
+    margin-top: -15px;
+  }
+
+}
+.extra-img-row {
+  display: none; /* Hide the row containing the new image by default */
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .extra-img-row {
+    display: block; /* Display the row */
+  }
+}
+/* Hide .banner-column for screen widths less than 1024px */
+@media (max-width: 1023px) {
+  .banner-column {
+    display: none;
+  }
+  .carousel-banner{
+    display: none;
+  }
+  .container-menu{
+    display: none;
+  }
+  .nav-container{
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-column {
+    margin-top: -28px !important;
+  }
+  .img-banner{
+    height: 107px !important;
+  }
+  .banner-column .row {
+    margin-top: 25px !important;
+    margin-bottom: -3px;
+  }
+  .chat-form input[type="text"],
+  .chat-form textarea {
+    width: 100% !important; /* Đặt chiều rộng của các input và textarea là 100% */
+  }
+}
+/* Cho màn hình từ 1024px đến 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .banner-column .row {
+    margin-top: 27px;
+    margin-bottom: -3px;
+  }
+
+  .banner-column {
+    margin-top: -158px;
+  }
+  #myCarousel .carousel-item img {
+    height: 250px !important;
+  }
+  .img-banner{
+    height: 107px;
+  }
+}
+
+/* Cho màn hình từ 1200px đến 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .banner-column .row {
+    margin-top: 18px;
+    margin-bottom: -2px;
+  }
+
+  .banner-column {
+    margin-top: -38px;
+  }
+  .img-fluid {
+    width: 320px; /* Hình ảnh sẽ không vượt quá chiều rộng của parent container */
+    height: 135px; /* Đảm bảo tỷ lệ khung hình được duy trì */
+  }
+  #myCarousel .carousel-item img {
+    height: 325px !important;
+  }
+  
+  .img-bottom{
+    height: 157px;
+  }
+  #myCarousel .carousel-item img {
+    height: 315px;
+  }
+  .img-banner{
+    height: 154px;
+  }
+}
+
+/* Cho màn hình từ 1400px trở lên */
+@media (min-width: 1400px) {
+  .banner-column .row {
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+
+  .banner-column {
+    margin-top: -40px;
+  }
+  .img-bottom{
+    height: 148px;
+    margin-top: 5px;
+  }
+  .img-left{
+    margin-top: 6px;
+  }
+  .chat-form input[type="text"],
+  .chat-form textarea {
+    width: 100% !important; /* Đặt chiều rộng của các input và textarea là 100% */
+  }
+}
+
+/* Xem tất cả css */
+.custom-link {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid red;
+  padding: 11px 25px;
+  background-color: transparent; /* Nền trong suốt ban đầu */
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi */
+  border-radius: 5px;
+}
+
+.custom-link:hover {
+  color: white; /* Màu chữ khi hover */
+  background-color: red; /* Màu nền khi hover */
+}
+/* Xem tất cả css */
+
+.container-logo{
+  background-color: #ffffff;
+  margin-top: 40px !important;
+  border-radius: 15px;
+}
+.carousel-item .col-lg-2 img {
+  cursor: pointer; /* Đổi con trỏ chuột thành biểu tượng pointer */
+}
+
+.carousel-item .col-lg-2 img:hover {
+  opacity: 0.7; /* Hiệu ứng mờ khi hover vào logo */
+}
+.custom-logo {
+  transition: transform 0.2s ease; /* Hiệu ứng chuyển động */
+}
+
+.custom-logo:hover {
+  transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+}
+.section-title h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  color: #000;
+  letter-spacing: 0.3px;
+  padding: 0;
+}
+.section-title::after {
+  content: "";
+  height: 3px;
+  background: red;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
+/* marquee scrolling start */
+ /* Container styles */
+ .scrolling-text-container {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 4px;
+}
+
+/* Text styles */
+.scrolling-text {
+  display: flex;
+}
+
+.scrolling-text-item {
+  padding: 0 30px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner > div {
+  animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner > div {
+  animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
+@media (max-width: 768px) {
+  .scrolling-text-inner[role="marquee"] {
+    --marquee-speed: 19s !important; /* Adjust speed for mobile */
+  }
+}
+/* marquee scrolling end */
+
+
+
+
+#wrapper {
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 204px;
+  height: 148px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .img-news{
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .technology-news{
+    margin-top: 40px !important;
+  }
+  .promotion-news{
+    margin-top: 40px !important;
+
+  }
+}
+
+@media (min-width: 769px) {
+  .img-news {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .technology-news{
+    margin-top: 50px !important;
+  }
+  .promotion-news{
+    margin-top: 50px !important;
+
+  }
+}
